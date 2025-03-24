@@ -10,8 +10,7 @@ body_pokemons = {
 response = requests.post(url = f'{URL}/pokemons', headers = HEADER, json = body_pokemons)
 print(response.text)
 
-URL ='https://api.pokemonbattle.ru/v2'
-HEADER = {'Content-Type' : 'application/json', 'trainer_token' : '9109fc5a245b449c64f6608b3e5c3967'}
+
 body_name = {
     "pokemon_id": "272730",
     "name": "Kolobok",
@@ -21,8 +20,7 @@ body_name = {
 response_name = requests.put(url = f'{URL}/pokemons', headers = HEADER, json = body_name)
 print(response_name.text)
 
-URL ='https://api.pokemonbattle.ru/v2'
-HEADER = {'Content-Type' : 'application/json', 'trainer_token' : '9109fc5a245b449c64f6608b3e5c3967'}
+
 body_add = {
     "pokemon_id": "272730"
 }
